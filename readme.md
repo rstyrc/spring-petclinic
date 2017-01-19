@@ -100,8 +100,9 @@ The [issue tracker](https://github.com/spring-projects/spring-petclinic/issues) 
 
 For pull requests, editor preferences are available in the [editor config](.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
 
+# Contributing #2
+Don't forget to add notes when you submit a pull request.
 
-# Experimentation
 
-This is a trivial change to demonstrate the functionality of Github's pull request capabilities.
+
 
