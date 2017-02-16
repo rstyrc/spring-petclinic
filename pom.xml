@@ -34,6 +34,7 @@
 
   </properties>
 
+<<<<<<< HEAD
 <repositories>
  <repository>
  <id>nexus</id>
@@ -56,6 +57,22 @@
 
 
 
+=======
+    
+ <repositories>
+    <repository>
+    <id>nexus</id>
+    <url>http://localhost:8081/repository/maven-public/</url>
+    </repository>
+</repositories>
+    
+    
+    
+    
+    
+    
+    
+>>>>>>> 66fee1f68700a11f68a6662f1c664bfa2922e656
   <dependencies>
     <!-- Spring and Spring Boot dependencies -->
     <dependency>
