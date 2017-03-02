@@ -17,7 +17,7 @@ import spock.lang.Specification;
  * @author Chris Jones
  *         Simple tests adapted to use the Spock acceptance test framework.
  */
-public class ValidatorSpockTests extends Specification {
+public class ValidatorSpockTestsTwo extends Specification {
 
     private Validator createValidator() {
         LocalValidatorFactoryBean localValidatorFactoryBean = new LocalValidatorFactoryBean();
@@ -42,8 +42,7 @@ public class ValidatorSpockTests extends Specification {
 	  violation.getPropertyPath().toString().equals("firstName");
 	  violation.getMessage().equals("may not be empty");
 	}
-
-
+	
 	// 2. TODO: validate against null first name.
 	def "first name cannot be null"() {
 	  setup:
@@ -133,8 +132,7 @@ public class ValidatorSpockTests extends Specification {
 	  violation.getPropertyPath().toString().equals("lastName");
 	  violation.getMessage().equals("may be valid");
 	}
-
-
+	
 }
 
 
