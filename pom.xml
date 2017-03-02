@@ -35,12 +35,14 @@
   </properties>
 
 <<<<<<< HEAD
+<!--
 <repositories>
  <repository>
  <id>nexus</id>
  <url>http://localhost:8081/repository/maven-public/</url>
  </repository>
 </repositories>
+
 
 <distributionManagement>
  <snapshotRepository>
@@ -66,7 +68,7 @@
     </repository>
 </repositories>
     
-    
+-->    
     
     
     
@@ -219,7 +221,10 @@
 
       <!-- Spring Boot Actuator displays build-related information if a git.properties 
         file is present at the classpath -->
-      <plugin>
+      
+	  
+	  <!--   Comment out 5.1.2.2
+	  <plugin>
         <groupId>pl.project13.maven</groupId>
         <artifactId>git-commit-id-plugin</artifactId>
         <executions>
@@ -237,7 +242,9 @@
           </generateGitPropertiesFilename>
         </configuration>
       </plugin>
-
+	-->
+	  
+	  
       <plugin>
         <groupId>ro.isdc.wro4j</groupId>
         <artifactId>wro4j-maven-plugin</artifactId>
@@ -288,6 +295,20 @@
             </execution>
             </executions>
             </plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+				<execution>
+				<id>copy-dependencies</id>
+				<phase>package</phase>
+				<goals><goal>copy-dependencies</goal></goals>
+				</execution>
+				</executions>
+			</plugin>
+			
     </plugins>
   </build>
   
